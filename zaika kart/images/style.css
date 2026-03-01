@@ -37,7 +37,7 @@ nav{
   gap: 40px;
   margin: 2%;
 }
-/* --- Tablet View---  */
+/* --- Tablet View-- */
 @media (max-width: 1000px) {
   #div {
     gap: 15px;
