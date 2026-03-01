@@ -1,0 +1,407 @@
+#hero{
+    position: relative;
+    width: 100%;
+}
+#hero div{
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+  /* background: rgba(0,0,0,0.6); */
+  border-radius: 10px;
+}
+#hero div input{
+  width: 200px;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px , solid rgba(0,0,0,0.2);
+  color:black;
+  font-size: large;
+  font-style: italic;
+  /* background-color:rgba(0,0,0,0.7); */
+  box-shadow:0  10px  25px rgba(0,0,0,0.7);
+}
+#hero div button{
+  width: 100px;
+  height: 35px;
+  background-color: #ff4b2b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#menu{
+  width: 100%;
+  /* background-color: white; */
+}
+
+#menu ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 150px));
+  gap: 20px;
+  justify-content: center;
+  padding: 10px 10px;
+  margin: 0;
+}
+
+#menu ul li{
+  list-style: none;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: flex-end;   /* bottom me bhejega */
+  justify-content: center; /* center me karega */
+  padding-bottom: 10px;
+  color: white;
+  text-shadow: 2px 2px 6px black;  /* Warm yellow */
+  font-weight: bold;
+  font-size: 18px;
+  /* background-color: rgb(26, 4, 70); */
+  aspect-ratio: 1/1;
+  z-index: 50;
+}
+
+
+
+
+/* popular qutoes */
+
+#h2{
+display: flex;
+margin-left: 100px;
+}
+
+#main{
+  width: 100%;
+  
+
+}
+#main ul{
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 190px));
+  gap: 20px;
+  justify-content: center;
+  /* justify-content: space-between; */
+  padding: 10px 10px;
+  /* background-color: aquamarine; */
+  margin: 0;
+}
+#main ul li{
+  list-style: none;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: flex-end;   /* bottom me bhejega */
+  justify-content: center; /* center me karega */
+  padding-bottom: 10px;
+  color: white;
+  text-shadow: 3px 3px 6px black;   
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgb(26, 4, 70);
+  aspect-ratio: 1/1;
+}
+b{
+  background-color: rgba(0,0,0,0.3);
+}
+#main ul div button{
+  position: relative;
+ width: 100px;
+ height: 30px;
+ top: 07px;
+ border-radius: 10px;
+ border: 1px solid black;
+ cursor: pointer;
+ transition: 0.2s ease;
+ 
+}
+#main ul div button:hover{
+  transform: translate(-5px);
+  color:white;
+}
+.offers{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ff4d4d;
+  color: white;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.offers div{
+  font-size: 14px;
+}
+.why{
+  padding: 50px 60px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.why h2{
+  margin-bottom: 30px;
+}
+
+.why-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.why-box{
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.why-box:hover{
+  transform: translateY(-5px);
+}
+
+
+
+
+
+
+.reviews{
+  padding: 50px 60px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.reviews h2{
+  margin-bottom: 30px;
+}
+
+.review-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.review-box{
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.review-box:hover{
+  transform: translateY(-5px);
+}
+
+
+
+
+
+
+.special{
+  padding: 60px;
+  background: linear-gradient(to right, #ff4d4d, #ff944d);
+  text-align: center;
+  color: white;
+}
+
+.special-content h2{
+  margin-bottom: 15px;
+}
+
+.special-content p{
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.special-content button{
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.special-content button:hover{
+  background-color: black;
+  color: white;
+}
+
+
+
+
+.app{
+  padding: 60px;
+  background-color: #f5f5f5;
+}
+
+.app-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.app-text{
+  flex: 1;
+}
+
+.app-text h2{
+  margin-bottom: 15px;
+}
+
+.app-text p{
+  margin-bottom: 20px;
+}
+
+.app-text button{
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.app-text button:hover{
+  background-color: black;
+  color: white;
+}
+
+.app-image{
+  flex: 1;
+}
+
+.app-image img{
+  width: 100%;
+  max-width: 300px;
+}
+
+
+.newsletter{
+  padding: 60px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.newsletter h2{
+  margin-bottom: 10px;
+}
+
+.newsletter p{
+  margin-bottom: 25px;
+}
+
+.newsletter-box{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter-box input{
+  padding: 10px;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.newsletter-box button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.newsletter-box button:hover{
+  background-color: black;
+  color: white;
+}
+
+
+
+.cta{
+  padding: 70px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #ff4d4d, #ff944d);
+  color: white;
+}
+
+.cta-content h2{
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.cta-content p{
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.cta-content button{
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-content button:hover{
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+}
+
+
+.footer{
+  background-color: #222;
+  color: white;
+  padding: 50px 20px 20px;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-box{
+  flex: 1;
+}
+
+.footer-box h3{
+  margin-bottom: 15px;
+}
+
+.footer-box ul{
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li{
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer-box ul li:hover{
+  color: #ff944d;
+}
+
+.footer-bottom{
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 14px;
+}
+.special-msg{
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #ff944d;
+}

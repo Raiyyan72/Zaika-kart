@@ -1,0 +1,263 @@
+*{
+    margin: 0vw;
+    padding: 0vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    /* background-color:#1a1a1a; */
+    background-color: white;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+}
+
+#zaika{
+    position: relative;
+    margin-left: 2%;
+    margin-right: auto;
+    width: 200px;
+    height: 50px;
+
+}
+#div a {
+  text-decoration: none;
+  /* color: #69585f; */
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+#div {
+  display: flex;
+  flex-wrap: wrap;       /* chhoti width pe items next line me aayenge */
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 2%;
+}
+/* --- Tablet View (Pehle likhein) --- */
+@media (max-width: 1000px) {
+  #div {
+    gap: 15px;
+    margin: 1%;
+  }
+  #cart {
+    gap: 10px;
+  }
+  button {
+    width: 100px; /* Button chota kiya */
+  }
+  #hero div{
+    position: absolute;
+  top: 65%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  gap: 5px;
+  padding: 05px;
+  /* background: rgba(0,0,0,0.6); */
+  border-radius: 05px;;
+  }
+  #hero div button{
+     width: 50px;
+  height: 10px;
+  background-color: #ff4b2b;
+  border: none;
+  border-radius: 01px;
+  cursor: pointer;
+  }
+   #hero div input{
+      width: 10px;
+  padding: 02px;
+  border-radius: 01px;
+  border: none;
+  color: black;
+  /* background-color:rgba(0,0,0,0.7); */
+  }
+}
+
+/* --- Mobile View (Sabse niche likhein) --- */
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: nowrap; /* Sab kuch ek line mein rakhne ke liye */
+    justify-content: space-around;
+  }
+
+  #zaika {
+    width: 80px; /* Logo chota kiya */
+    height: auto;
+    margin-left: 5px;
+  }
+
+  #div {
+    flex-direction: row; 
+    flex-wrap: nowrap; /* Wrap band kiya */
+    gap: 8px;
+    margin: 0;
+    overflow-x: auto; /* Agar screen bohot choti ho toh scroll ho jaye */
+  }
+
+  #div a {
+    font-size: 11px; /* Font size kam kiya */
+    padding: 2px;
+  }
+
+  #cart {
+    gap: 8px;
+  }
+
+  .button {
+    width: 40px; /* Button aur chota kiya */
+    font-size: 10px;
+    height: 20px;
+  }
+  
+  #basket, #div2 {
+    margin: 0; /* Extra margin hatayi */
+  }
+  #hero div{
+    position: absolute;
+  bottom: 20%;
+  flex-wrap:wrap;
+  width: 100px;
+
+  display: flex;
+  gap: 5px;
+  padding: 05px;
+  /* background: rgba(0,0,0,0.6);
+  border-radius: 05px;; */
+
+  }
+
+  /* #hero div button{
+     width: 30px;
+  height: 02px;
+  background-color: #ff4b2b;
+  border: none;
+  border-radius: 01px;
+  cursor: pointer;
+
+  /* position: absolute;
+  top: 100%;
+  } */
+   #hero div input{
+    /* position: absolute;
+    top: 10%; */
+      width: 50px;
+  padding: 02px;
+  border-radius: 01px;
+  border: none;
+  color: white;
+  /* background-color:rgba(0,0,0,0.7); */
+  }
+  #hero div button{
+    position: absolute;
+   top: 48px;
+
+
+   /* display: contents;
+   height: 10px; */
+  }
+ 
+}
+#cart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin: 1%;
+  padding: 0;
+  gap: 16px;
+}
+
+#div2{
+    display: flex;
+    margin: 5%;
+    padding: 0;
+}
+/* #div2 i{
+    color: #69585f;
+} */
+
+.fa-magnifying-glass{
+  display: flex;
+ 
+
+}
+
+.button{
+   position: relative;
+    width: 150px;
+    height: 25px;
+    background-color: #ff4b2b;
+    border: none;
+    border-radius: 05px;
+    cursor: pointer;
+}
+#basket{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: nowrap;
+    margin: 15%;
+    /* color: #69585f; */
+}
+
+@media (max-width: 1000px){
+  #div{
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 2%;
+    justify-content: center;
+  }
+  #cart{
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .button{
+    width: 60px;
+    /* height: 10px; */
+  }
+  #hero div{
+    position: absolute;
+  top: 65%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  gap: 5px;
+  padding: 05px;
+  /* background: rgba(0,0,0,0.6); */
+  border-radius: 05px;;
+  }
+  #hero div button{
+     width: 30px;
+     height: 10px;
+  height: 02px;
+  background-color: #ff4b2b;
+  border: none;
+  border-radius: 01px;
+  cursor: pointer;
+  }
+  #hero div input{
+      width: 50px;
+  padding: 02px;
+  border-radius: 01px;
+  border: none;
+  color: white;
+  /* background-color:rgba(0,0,0,0.7); */
+  }
+}
+
+#content{
+    height: 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+
+}

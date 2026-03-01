@@ -1,0 +1,310 @@
+/* #menu ul li{
+    display: flex;
+    background-color: black;
+    width: 180px;
+    height: 180px;
+    /* justify-content: space-between; 
+}*/
+/* Tablet (iPad range) */
+/* Tablet */
+/* Desktop */
+@media (min-width: 1200px){
+  #menu ul{
+    grid-template-columns: repeat(6, 190px);
+  }
+}
+
+/* Laptop */
+@media (max-width: 1199px){
+  #menu ul{
+    grid-template-columns: repeat(auto-fill, minmax(120px, 150px));
+    margin-left: 50px;
+  }
+}
+@media (max-width: 1080px){
+  #menu ul{
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 20px;
+  }
+}
+
+/* Tablet (iPad Air approx 820px) */
+@media (max-width: 1000px){
+  #menu ul{
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px){
+  #menu ul{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
+
+
+/* list images area css */
+
+#l1{
+    background-image: url("burger\ duo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+#l2{
+    background-image: url("pizza\ bc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+#l3{
+    background-image: url("biryani.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+#l4{
+    background-image: url("desert\ img.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   cursor: pointer;
+}
+#l5{
+    background-image: url("chinese\ img.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   cursor: pointer;
+}
+#l6{
+    background-image: url("drinks\ img.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   cursor: pointer;
+}
+
+
+
+@media (max-width: 2500px){
+  #main ul{
+   grid-template-columns: repeat(4,1fr);
+  }
+}
+@media (min-width: 1200px){
+  #main ul{
+   grid-template-columns: repeat(auto-fill, minmax(300px, 150px));
+  }
+}
+@media (max-width: 1300px){
+  #main ul{
+   grid-template-columns: repeat(4,1fr);
+  }
+}
+
+/* Laptop */
+@media (max-width: 1199px){
+  #main ul{
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 50px;
+  }
+}
+@media (max-width: 1050px){
+  #main ul{
+    grid-template-columns: repeat(2, 300px);
+    padding: 0 20px;
+  }
+}
+
+/* Tablet (iPad Air approx 820px) */
+@media (max-width: 1000px){
+  #main ul{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px){
+  #main ul{
+    grid-template-columns: repeat(2, 150px);
+    padding: 0 50px;
+  }
+}
+@media (max-width: 360px){
+  #main ul{
+    grid-template-columns: repeat(2, 100px);
+    padding: 0 50px;
+  }
+}
+
+
+#l11{
+    background-image: url("margerete\ pizz.jpg");
+     background-size: cover;
+    background-repeat: no-repeat;
+   cursor: pointer;
+}
+#l12{
+    background-image: url("cheese\ burger.jpg");
+     background-size: cover;
+    background-repeat: no-repeat;
+   cursor: pointer;
+}
+#l13{
+    background-image: url("chicken\ wings.jpg");
+     background-size: cover;
+    background-repeat: no-repeat;
+   cursor: pointer;
+}
+#l14{
+    background-image: url("chocolate\ cake.jpg");
+     background-size: cover;
+    background-repeat: no-repeat;
+   cursor: pointer;
+}
+
+
+
+/* why choose us media */
+/* Laptop */
+@media (max-width: 1200px){
+  .why-container{
+    gap: 15px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px){
+  .why-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-box{
+    width: 80%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px){
+  .why{
+    padding: 30px 20px;
+  }
+
+  .why-box{
+    width: 100%;
+  }
+
+  .why-box h3{
+    font-size: 16px;
+  }
+
+  .why-box p{
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 360px){
+  .why-box{
+    padding: 15px;
+  }
+}
+
+
+/* customer reveiw media */
+@media (max-width: 992px){
+  .review-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-box{
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px){
+  .review-box{
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 600px){
+  .special{
+    padding: 40px 20px;
+  }
+
+  .special-content h2{
+    font-size: 20px;
+  }
+
+  .special-content p{
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 992px){
+  .app-container{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .app-image img{
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 600px){
+  .app{
+    padding: 40px 20px;
+  }
+}
+
+
+
+
+@media (max-width: 600px){
+  .newsletter-box{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-box input{
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+
+
+@media (max-width: 600px){
+  .cta-content h2{
+    font-size: 20px;
+  }
+
+  .cta-content p{
+    font-size: 14px;
+  }
+
+  .cta{
+    padding: 50px 15px;
+  }
+}
+
+
+
+
+@media (max-width: 768px){
+  .footer-container{
+    flex-direction: column;
+    text-align: center;
+  }
+}
